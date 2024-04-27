@@ -67,7 +67,7 @@ export default function Home() {
       if (playing) {
         setBackgroundIndex((prevIndex) => (prevIndex + 1) % images.length);
       }
-    }, 2000);
+    }, 4000);
 
     // Cleanup function to stop music when component unmounts
     return () => {
