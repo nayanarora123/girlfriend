@@ -137,7 +137,7 @@ export default function Home() {
     <div className={`container ${dark ? "dark" : ""}`} style={divStyle}>
       <Head>
         <title>Hey Cutie</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link sizes="96x96" type="image/png" rel="icon" href="/pics/icons8-cupcake-96.png" />
       </Head>
 
       <main>
