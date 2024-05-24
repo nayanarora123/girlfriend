@@ -84,7 +84,7 @@ export default function Home() {
   const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
-    const start = new Date(2024, 1, 27, 18, 30);
+    const start = new Date(2024, 1, 25, 18, 30);
 
     const timer = setInterval(() => {
       const t = new Date() - start;
