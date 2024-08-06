@@ -4,7 +4,7 @@ import { format } from "date-fns";
 
 export default async (req, res) => {
   const result = await axios.get(
-    `https://api.openweathermap.org/data/3.0/onecall?lat=30.900965&lon=75.857277&appid=${process.env.WEATHER_API_KEY}&part=daily&units=Imperial`
+    `https://api.openweathermap.org/data/3.0/onecall?lat=30.9010&lon=75.8573&appid=${process.env.WEATHER_API_KEY}&part=daily&units=Imperial`
   );
 
 const days = result.data.daily.splice(0, 5).map((day) => {
@@ -32,78 +32,3 @@ const days = result.data.daily.splice(0, 5).map((day) => {
   res.statusCode = 200;
   res.json({ days });
 };
-
-
-
-// const days = [
-//   {
-//    "icon": "Clear",
-//    "desc": "Clear sky",
-//    "date": "04/26",
-//    "date_full": "April 26, 2024",
-//    "details": {
-//      "humidity": 70,
-//      "rain": 0,
-//      "wind": 5.5
-//    },
-//    "feels": {
-//      "day": 25,
-//      "night": 15,
-//      "even": 22,
-//      "morn": 18
-//    },
-//    "temp": {
-//      "day": 24,
-//      "night": 14,
-//      "even": 21,
-//      "morn": 17
-//    }
-//  },
-//   {
-//    "icon": "Clear",
-//    "desc": "Clear sky",
-//    "date": "04/26",
-//    "date_full": "April 26, 2024",
-//    "details": {
-//      "humidity": 70,
-//      "rain": 0,
-//      "wind": 5.5
-//    },
-//    "feels": {
-//      "day": 25,
-//      "night": 15,
-//      "even": 22,
-//      "morn": 18
-//    },
-//    "temp": {
-//      "day": 24,
-//      "night": 14,
-//      "even": 21,
-//      "morn": 17
-//    }
-//  },
-//   {
-//    "icon": "Clear",
-//    "desc": "Clear sky",
-//    "date": "04/26",
-//    "date_full": "April 26, 2024",
-//    "details": {
-//      "humidity": 70,
-//      "rain": 0,
-//      "wind": 5.5
-//    },
-//    "feels": {
-//      "day": 25,
-//      "night": 15,
-//      "even": 22,
-//      "morn": 18
-//    },
-//    "temp": {
-//      "day": 24,
-//      "night": 14,
-//      "even": 21,
-//      "morn": 17
-//    }
-//  },
- 
-// ];

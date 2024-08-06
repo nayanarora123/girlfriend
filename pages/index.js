@@ -174,8 +174,7 @@ export default function Home() {
                 <div>{day} Days</div>
                 <div>{hours} Hours</div>
                 <div>{minutes} Minutes</div>
-                <div>{
-                  seconds} Seconds</div>
+                <div>{seconds} Seconds</div>
               </div>
             </>
             : 'I Love You Babe'}
